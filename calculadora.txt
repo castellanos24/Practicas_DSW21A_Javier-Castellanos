@@ -1,0 +1,17 @@
+fun main() {
+    // Parámetros
+    val valor1: Double = 10.0
+    val valor2: Double = 5.0
+    val operacion: Char = '+'
+
+    // Resultado según la operación
+    val resultado = when (operacion) {
+        '+' -> valor1 + valor2
+        '-' -> valor1 - valor2
+        '*' -> valor1 * valor2
+        '/' -> if (valor2 != 0.0) valor1 / valor2 else "Error: División entre 0"
+        else -> "Operación no válida"
+    }
+
+    println("El resultado es: $resultado")
+}
