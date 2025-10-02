@@ -1,0 +1,18 @@
+fun main() {
+    
+    val estudiantes = arrayOf("Ana", "Luis", "María", "Pedro", "Sofía")
+
+    
+    val notas = intArrayOf(8, 7, 9, 6, 10)
+
+    var suma = 0
+    for (i in estudiantes.indices) {
+        println("${estudiantes[i]} : ${notas[i]}")
+        suma += notas[i]
+    }
+
+    val promedio = suma.toDouble() / notas.size
+
+    println("Suma de notas: $suma")
+    println("Promedio: $promedio")
+}
